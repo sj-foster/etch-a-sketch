@@ -1,0 +1,32 @@
+:root {
+    --grid-axis: 16;
+    --grid-percent: 16fr;
+}
+
+#container {
+    display: grid;
+    width: 640px;
+    height: 640px;
+    grid-template-columns: repeat(var(--grid-axis), var(--grid-percent));
+    grid-template-rows: repeat(var(--grid-axis), var(--grid-percent));
+}
+
+h1 {
+    color: blue;
+}
+
+.grid-box {
+    border: solid black 1px;
+}
+
+.grid-box-inactive {
+    background-color: pink;
+}
+
+.grid-box-active {
+    background-color: red;
+}
+
+#title-div {
+    background-color: red;
+}
